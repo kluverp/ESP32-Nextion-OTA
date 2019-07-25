@@ -10,3 +10,5 @@ I based the code loosely on the Nextion Arduino Upload code.
 Since there was no library for the ESP32 IDF, I decided to write my own. Maybe it's helpful to someone.
 
 The code uses the esp_http_library for making the API call. 
+
+I compiled this verion against v3.2 for the ESP IDF
