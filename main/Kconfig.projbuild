@@ -1,0 +1,50 @@
+menu "Nextion OTA"
+
+config UART_TXD
+    int "UART TXD pin (0-39)"
+    default 1
+    range 0 39
+    help
+        GPIO number to use for UART TXD pin.
+
+config UART_RXD
+    int "UART RXD pin (0-39)"
+    default 3
+    range 0 39
+    help
+        GPIO number to use for UART RXD pin.
+
+config UART_BUF_SIZE
+    int "UART buffer size"
+    default 1024
+    help
+        UART receive buffer size.
+
+config UART_NUM
+    int "UART number (0-2)."
+    default 0
+    range 0 2
+    help
+       The UART number to use for Nextion communicaiton.
+
+config NEXTION_OTA_URL
+    string "Nextion OTA endpoint"
+    default "https://<your-api-endpoint>"
+    help
+    	The URL endpoint to call for downloading the Nextion firmware.
+
+config WIFI_SSID
+    string "The WiFi SSID"
+    default "DEMO_TEST"
+       
+config WIFI_PASS
+    string "The WiFi PASSWORD"
+    default "1234567890"
+
+config WIFI_MAXIMUM_RETRY
+    int "Max. number of connection retries"
+    default 5
+    help
+       The maximum number of WiFi connection retries.
+
+endmenu
