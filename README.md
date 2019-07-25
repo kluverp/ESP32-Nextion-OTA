@@ -11,4 +11,4 @@ Since there was no library for the ESP32 IDF, I decided to write my own. Maybe i
 
 The code uses the esp_http_library for making the API call. 
 
-I compiled this verion against v3.2 for the ESP IDF
+I compiled this verion against v3.2 of the ESP IDF.
